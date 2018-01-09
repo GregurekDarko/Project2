@@ -73,10 +73,24 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/teams"
                 android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/ten_dp"
                 android:text="@string/score_string"
                 android:textAllCaps="true"
                 android:textSize="@dimen/sixteen_sp"
                 android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/left_button_goal"
+                android:layout_width="@dimen/oval_button_size"
+                android:layout_height="@dimen/oval_button_size"
+                android:layout_below="@id/score_text"
+                android:layout_marginLeft="@dimen/oval_button_margin"
+                android:background="@drawable/add_one_button"
+                android:text="@string/plus"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/sixteen_sp" />
+
+
 
 
         </RelativeLayout>
