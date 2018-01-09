@@ -13,12 +13,23 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="@dimen/relative_layout_margin"
             android:background="@drawable/elements_background"
-            android:paddingBottom="200dp"
-            android:layout_margin="@dimen/relative_layout_margin">
+            android:paddingBottom="@dimen/two_hundred_dp"
+            android:paddingTop="@dimen/ten_dp">
+
+            <TextView
+                android:id="@+id/competition_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/competition_name"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
 
 
-            </RelativeLayout>
+        </RelativeLayout>
 
     </ScrollView>
 

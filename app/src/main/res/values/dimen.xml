@@ -5,4 +5,12 @@
     <dimen name="relative_layout_padding_bottom">200dp</dimen>
 
 
+
+
+
+    <!-- DP values for margins, paddings, etc -->
+
+    <dimen name="ten_dp">10dp</dimen>
+    <dimen name="two_hundred_dp">200dp</dimen>
+
 </resources>
