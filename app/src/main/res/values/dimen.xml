@@ -14,6 +14,7 @@
     <dimen name="two_hundred_dp">200dp</dimen>
     <dimen name="oval_button_size">44dp</dimen>
     <dimen name="oval_button_margin">40dp</dimen>
+    <dimen name="score_faults_margin">25dp</dimen>
 
     <!-- SP values for text, etc -->
 

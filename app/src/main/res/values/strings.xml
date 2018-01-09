@@ -6,5 +6,6 @@
     <string name="france_string">France</string>
     <string name="score_string">Score</string>
     <string name="plus">+</string>
+    <string name="zero">0</string>
 
 </resources>

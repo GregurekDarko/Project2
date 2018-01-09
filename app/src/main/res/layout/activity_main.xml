@@ -80,7 +80,7 @@
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/left_button_goal"
+                android:id="@+id/goal_portugal"
                 android:layout_width="@dimen/oval_button_size"
                 android:layout_height="@dimen/oval_button_size"
                 android:layout_below="@id/score_text"
@@ -90,6 +90,41 @@
                 android:textColor="@color/primaryTextColor"
                 android:textSize="@dimen/sixteen_sp" />
 
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/portugal_score"
+              android:layout_toEndOf="@id/goal_portugal"
+              android:layout_toRightOf="@id/goal_portugal"
+              android:text="@string/zero"
+              android:layout_alignBaseline="@id/goal_portugal"
+              android:layout_marginLeft="@dimen/score_faults_margin"
+              android:textSize="@dimen/sixteen_sp"/>
+
+
+
+            <Button
+                android:id="@+id/goal_france"
+                android:layout_width="@dimen/oval_button_size"
+                android:layout_height="@dimen/oval_button_size"
+                android:layout_below="@id/score_text"
+                android:layout_alignParentRight="true"
+                android:layout_alignBaseline="@id/goal_portugal"
+                android:background="@drawable/add_one_button"
+                android:text="@string/plus"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/sixteen_sp"
+                android:layout_marginRight="@dimen/oval_button_margin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/goal_france"
+                android:layout_toLeftOf="@id/goal_france"
+                android:layout_marginRight="@dimen/score_faults_margin"
+                android:textSize="@dimen/sixteen_sp"
+                android:text="@string/zero"
+                />
 
 
 
