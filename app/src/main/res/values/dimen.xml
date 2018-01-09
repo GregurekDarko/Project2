@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- RelativeLayout > Scroll View > Relative Layout Dimensions-->
-
-
+    <dimen name="relative_layout_margin">5dp</dimen>
+    <dimen name="relative_layout_padding_bottom">200dp</dimen>
 
 
 </resources>
