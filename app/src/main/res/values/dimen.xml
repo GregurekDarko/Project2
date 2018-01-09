@@ -11,6 +11,7 @@
     <!-- DP values for margins, paddings, etc -->
 
     <dimen name="ten_dp">10dp</dimen>
+    <dimen name="twenty_dp">20dp</dimen>
     <dimen name="two_hundred_dp">200dp</dimen>
     <dimen name="oval_button_size">44dp</dimen>
     <dimen name="oval_button_margin">40dp</dimen>
@@ -20,6 +21,7 @@
 
     <dimen name="fourteen_sp">14sp</dimen>
     <dimen name="sixteen_sp">16sp</dimen>
+    <dimen name="eighteen_sp">18sp</dimen>
 
 
 </resources>

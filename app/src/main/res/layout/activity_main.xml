@@ -16,17 +16,17 @@
             android:layout_margin="@dimen/relative_layout_margin"
             android:background="@drawable/elements_background"
             android:paddingBottom="@dimen/two_hundred_dp"
-            android:paddingTop="@dimen/ten_dp">
+            android:paddingTop="@dimen/twenty_dp">
 
             <TextView
                 android:id="@+id/competition_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:layout_marginBottom="@dimen/ten_dp"
+                android:layout_marginBottom="@dimen/twenty_dp"
                 android:text="@string/competition_name"
                 android:textColor="@color/secondaryTextColor"
-                android:textSize="18sp"
+                android:textSize="@dimen/eighteen_sp"
                 android:textStyle="bold" />
 
             <LinearLayout
@@ -34,7 +34,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/competition_name"
-                android:layout_marginBottom="@dimen/ten_dp"
+                android:layout_marginBottom="@dimen/twenty_dp"
                 android:background="@drawable/elements_background"
                 android:orientation="horizontal">
 
@@ -73,7 +73,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/teams"
                 android:layout_centerHorizontal="true"
-                android:layout_marginBottom="@dimen/ten_dp"
+                android:layout_marginBottom="@dimen/twenty_dp"
                 android:text="@string/score_string"
                 android:textAllCaps="true"
                 android:textSize="@dimen/sixteen_sp"
@@ -114,13 +114,67 @@
                 android:text="@string/plus"
                 android:textColor="@color/primaryTextColor"
                 android:textSize="@dimen/sixteen_sp"
-                android:layout_marginRight="@dimen/oval_button_margin" />
+                android:layout_marginRight="@dimen/oval_button_margin"
+                android:layout_marginBottom="@dimen/twenty_dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignBaseline="@id/goal_france"
                 android:layout_toLeftOf="@id/goal_france"
+                android:layout_marginRight="@dimen/score_faults_margin"
+                android:textSize="@dimen/sixteen_sp"
+                android:text="@string/zero"
+                />
+            <TextView
+                android:id="@+id/faul_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/goal_france"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/twenty_dp"
+                android:text="@string/fauls"
+                android:textAllCaps="true"
+                android:textSize="@dimen/sixteen_sp"
+                android:textStyle="bold"
+                />
+            <Button
+                android:id="@+id/faul_portugal"
+                android:layout_width="@dimen/oval_button_size"
+                android:layout_height="@dimen/oval_button_size"
+                android:layout_below="@id/faul_text"
+                android:layout_marginLeft="@dimen/oval_button_margin"
+                android:background="@drawable/add_one_button"
+                android:text="@string/plus"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/sixteen_sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/faul_portugal"
+                android:layout_toRightOf="@id/faul_portugal"
+                android:layout_marginLeft="@dimen/score_faults_margin"
+                android:textSize="@dimen/sixteen_sp"
+                android:text="@string/zero"
+                />
+            <Button
+                android:id="@+id/faul_france"
+                android:layout_width="@dimen/oval_button_size"
+                android:layout_height="@dimen/oval_button_size"
+                android:layout_below="@id/faul_text"
+                android:layout_alignParentRight="true"
+                android:layout_alignBaseline="@id/faul_portugal"
+                android:background="@drawable/add_one_button"
+                android:text="@string/plus"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/sixteen_sp"
+                android:layout_marginRight="@dimen/oval_button_margin"
+                android:layout_marginBottom="@dimen/twenty_dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/faul_france"
+                android:layout_toLeftOf="@id/faul_france"
                 android:layout_marginRight="@dimen/score_faults_margin"
                 android:textSize="@dimen/sixteen_sp"
                 android:text="@string/zero"
