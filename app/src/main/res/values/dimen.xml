@@ -13,4 +13,9 @@
     <dimen name="ten_dp">10dp</dimen>
     <dimen name="two_hundred_dp">200dp</dimen>
 
+    <!-- SP values for text, etc -->
+
+    <dimen name="fourteen_sp">14sp</dimen>
+    <dimen name="sixteen_sp">16sp</dimen>
+
 </resources>

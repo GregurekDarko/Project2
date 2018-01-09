@@ -7,8 +7,8 @@
     tools:context=".MainActivity">
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -23,13 +23,64 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/ten_dp"
                 android:text="@string/competition_name"
                 android:textColor="@color/secondaryTextColor"
                 android:textSize="18sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/teams"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/competition_name"
+                android:layout_marginBottom="@dimen/ten_dp"
+                android:background="@drawable/elements_background"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableBottom="@drawable/flag_portugal"
+                    android:gravity="center_horizontal"
+                    android:text="@string/portugal_string"
+                    android:textAllCaps="true"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textSize="@dimen/fourteen_sp"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/ten_dp"
+                    android:layout_weight="1"
+                    android:drawableBottom="@drawable/flag_france"
+                    android:gravity="center_horizontal"
+                    android:text="@string/france_string"
+                    android:textAllCaps="true"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/score_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/teams"
+                android:layout_centerHorizontal="true"
+                android:text="@string/score_string"
+                android:textAllCaps="true"
+                android:textSize="@dimen/sixteen_sp"
+                android:textStyle="bold" />
 
 
         </RelativeLayout>
+
 
     </ScrollView>
 

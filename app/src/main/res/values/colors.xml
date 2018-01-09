@@ -11,6 +11,7 @@
 
 
     <color name="noteBackgroundColor">#b7162b</color>
+    <color name="border_colors">#afb0af</color>
 
 
 </resources>

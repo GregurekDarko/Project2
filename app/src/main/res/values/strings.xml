@@ -2,5 +2,8 @@
     <string name="app_name">Score Keeper App</string>
 
     <string name="competition_name">UEFA European Championship Finals</string>
+    <string name="portugal_string">Portugal</string>
+    <string name="france_string">France</string>
+    <string name="score_string">Score</string>
 
 </resources>
