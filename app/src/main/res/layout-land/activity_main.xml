@@ -49,11 +49,12 @@
                     android:textAllCaps="true"
                     android:textColor="@color/secondaryTextColor"
                     android:textSize="@dimen/fourteen_sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"/>
 
                 <RelativeLayout
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginRight="@dimen/ten_dp"
                     android:layout_marginLeft="@dimen/ten_dp"
                     android:layout_weight="1">
@@ -67,7 +68,7 @@
                         android:textAllCaps="true"
                         android:textSize="@dimen/fourteen_sp"
                         android:textStyle="bold"
-                        android:layout_marginBottom="@dimen/ten_dp"/>
+                        />
 
                     <Button
                         android:id="@+id/goal_portugal"
@@ -113,98 +114,63 @@
                         android:text="@string/plus"
                         android:textColor="@color/primaryTextColor"
                         android:textSize="@dimen/sixteen_sp" />
+                    <TextView
+                        android:id="@+id/faul_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/goal_france"
+                        android:layout_centerHorizontal="true"
+
+                        android:text="@string/fauls"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/sixteen_sp"
+                        android:textStyle="bold"
+                        />
+                    <Button
+                        android:id="@+id/faul_portugal"
+                        android:layout_width="@dimen/oval_button_size"
+                        android:layout_height="@dimen/oval_button_size"
+                        android:layout_below="@id/faul_text"
+                        android:background="@drawable/add_one_button"
+                        android:text="@string/plus"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="@dimen/sixteen_sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/faul_portugal"
+                        android:layout_toRightOf="@id/faul_portugal"
+                        android:layout_marginLeft="@dimen/ten_dp"
+                        android:textSize="@dimen/sixteen_sp"
+                        android:text="@string/zero"
+                        />
+                    <Button
+                        android:id="@+id/faul_france"
+                        android:layout_width="@dimen/oval_button_size"
+                        android:layout_height="@dimen/oval_button_size"
+                        android:layout_below="@id/faul_text"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignBaseline="@id/faul_portugal"
+                        android:background="@drawable/add_one_button"
+                        android:text="@string/plus"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="@dimen/sixteen_sp"
+                        android:layout_marginLeft="@dimen/ten_dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/faul_france"
+                        android:layout_toLeftOf="@id/faul_france"
+                        android:textSize="@dimen/sixteen_sp"
+                        android:text="@string/zero"/>
 
                 </RelativeLayout>
 
-                <TextView
 
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/ten_dp"
-                    android:drawableBottom="@drawable/flag_france"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="@string/france_string"
-                    android:textAllCaps="true"
-                    android:textColor="@color/secondaryTextColor"
-                    android:textStyle="bold" />
 
 
 
             </LinearLayout>
-
-
-<!--
-
-    <TextView
-                    android:id="@+id/faul_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/goal_france"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginBottom="@dimen/twenty_dp"
-                    android:text="@string/fauls"
-                    android:textAllCaps="true"
-                    android:textSize="@dimen/sixteen_sp"
-                    android:textStyle="bold"
-                    />
-
-
-
-
-
-
-
-            <Button
-                android:id="@+id/faul_portugal"
-                android:layout_width="@dimen/oval_button_size"
-                android:layout_height="@dimen/oval_button_size"
-                android:layout_below="@id/faul_text"
-                android:layout_marginLeft="@dimen/oval_button_margin"
-                android:background="@drawable/add_one_button"
-                android:text="@string/plus"
-                android:textColor="@color/primaryTextColor"
-                android:textSize="@dimen/sixteen_sp" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@id/faul_portugal"
-                android:layout_toRightOf="@id/faul_portugal"
-                android:layout_marginLeft="@dimen/score_faults_margin"
-                android:textSize="@dimen/sixteen_sp"
-                android:text="@string/zero"
-                />
-            <Button
-                android:id="@+id/faul_france"
-                android:layout_width="@dimen/oval_button_size"
-                android:layout_height="@dimen/oval_button_size"
-                android:layout_below="@id/faul_text"
-                android:layout_alignParentRight="true"
-                android:layout_alignBaseline="@id/faul_portugal"
-                android:background="@drawable/add_one_button"
-                android:text="@string/plus"
-                android:textColor="@color/primaryTextColor"
-                android:textSize="@dimen/sixteen_sp"
-                android:layout_marginRight="@dimen/oval_button_margin"
-                android:layout_marginBottom="@dimen/twenty_dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@id/faul_france"
-                android:layout_toLeftOf="@id/faul_france"
-                android:layout_marginRight="@dimen/score_faults_margin"
-                android:textSize="@dimen/sixteen_sp"
-                android:text="@string/zero"
-                />
--->
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/two_dp"
-                android:layout_below="@id/faul_france"
-                android:background="@color/border_colors"
-                android:layout_marginBottom="@dimen/twenty_dp"
-                android:id="@+id/border_bottom"
-                />
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -215,7 +181,47 @@
                 android:background="@drawable/reset_button"
                 android:textColor="@color/primaryTextColor"
 
+
                 />
+
+
+<!--
+
+
+
+  <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/ten_dp"
+                    android:drawableBottom="@drawable/flag_france"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/france_string"
+                    android:textAllCaps="true"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"/>
+
+
+
+
+
+
+
+
+
+                   <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/two_dp"
+                android:layout_below="@id/faul_france"
+                android:background="@color/border_colors"
+                android:layout_marginBottom="@dimen/twenty_dp"
+                android:id="@+id/border_bottom"
+                />
+
+-->
+
 
         </RelativeLayout>
 
