@@ -8,5 +8,6 @@
     <string name="plus">+</string>
     <string name="zero">0</string>
     <string name="fauls">Fauls</string>
+    <string name="Reset">Reset</string>
 
 </resources>

@@ -184,9 +184,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/two_dp"
                 android:layout_below="@id/faul_france"
-                android:background="@color/secondaryTextColor"
+                android:background="@color/border_colors"
                 android:layout_marginBottom="@dimen/twenty_dp"
                 android:id="@+id/border_bottom"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/border_bottom"
+                android:text="@string/Reset"
+                android:background="@drawable/reset_button"
+                android:textColor="@color/primaryTextColor"
+
                 />
 
         </RelativeLayout>
