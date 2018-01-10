@@ -50,6 +50,15 @@
                     android:textColor="@color/secondaryTextColor"
                     android:textSize="@dimen/fourteen_sp"
                     android:textStyle="bold" />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+
+
+
+                </RelativeLayout>
 
                 <TextView
 
@@ -78,7 +87,7 @@
                 android:textAllCaps="true"
                 android:textSize="@dimen/sixteen_sp"
                 android:textStyle="bold" />
-
+<!--
             <Button
                 android:id="@+id/goal_portugal"
                 android:layout_width="@dimen/oval_button_size"
@@ -179,7 +188,7 @@
                 android:textSize="@dimen/sixteen_sp"
                 android:text="@string/zero"
                 />
-
+-->
             <View
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/two_dp"
