@@ -180,7 +180,14 @@
                 android:text="@string/zero"
                 />
 
-
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/two_dp"
+                android:layout_below="@id/faul_france"
+                android:background="@color/secondaryTextColor"
+                android:layout_marginBottom="@dimen/twenty_dp"
+                android:id="@+id/border_bottom"
+                />
 
         </RelativeLayout>
 
