@@ -165,31 +165,7 @@
                         android:text="@string/zero"/>
 
                 </RelativeLayout>
-
-
-
-
-
-            </LinearLayout>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
-                android:layout_below="@id/border_bottom"
-                android:text="@string/Reset"
-                android:background="@drawable/reset_button"
-                android:textColor="@color/primaryTextColor"
-
-
-                />
-
-
-<!--
-
-
-
-  <TextView
+                <TextView
 
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -202,6 +178,30 @@
                     android:textColor="@color/secondaryTextColor"
                     android:textStyle="bold"
                     android:layout_gravity="center_vertical"/>
+
+
+
+
+            </LinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/teams"
+                android:text="@string/Reset"
+                android:background="@drawable/reset_button"
+                android:textColor="@color/primaryTextColor"
+
+
+                />
+
+
+<!--
+
+
+
+
 
 
 
