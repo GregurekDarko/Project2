@@ -206,4 +206,17 @@
     </ScrollView>
 
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="NOTE: This game took place in 2016, Portugal won by 1 : 0, I made this App just for my educational purposes in Android development. Thank you."
+        android:layout_margin="5dp"
+        android:background="@drawable/note_background"
+        android:textColor="@color/primaryTextColor"
+        />
+
+
+
 </RelativeLayout>
