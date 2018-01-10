@@ -50,11 +50,13 @@
                     android:textColor="@color/secondaryTextColor"
                     android:textSize="@dimen/fourteen_sp"
                     android:textStyle="bold" />
+
                 <RelativeLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_marginRight="@dimen/ten_dp"
-                    android:layout_marginLeft="@dimen/ten_dp">
+                    android:layout_marginLeft="@dimen/ten_dp"
+                    android:layout_weight="1">
 
                     <TextView
                         android:id="@+id/score_text"
@@ -73,9 +75,12 @@
                         android:layout_height="@dimen/oval_button_size"
                         android:layout_below="@id/score_text"
                         android:background="@drawable/add_one_button"
+                        android:layout_alignParentLeft="true"
                         android:text="@string/plus"
                         android:textColor="@color/primaryTextColor"
                         android:textSize="@dimen/sixteen_sp"
+                        android:layout_marginRight="@dimen/ten_dp"
+
 
                         />
 
@@ -87,16 +92,27 @@
                         android:layout_toRightOf="@id/goal_portugal"
                         android:text="@string/zero"
                         android:layout_alignBaseline="@id/goal_portugal"
-                        android:layout_marginLeft="@dimen/ten_dp"/>
+                        android:textSize="@dimen/sixteen_sp"/>
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/portugal_score"
+                        android:layout_toLeftOf="@id/goal_france"
                         android:layout_alignBaseline="@id/portugal_score"
                         android:layout_marginLeft="@dimen/twenty_dp"
                         android:textSize="@dimen/sixteen_sp"
-                        android:text="@string/zero"
-                        />
+                        android:text="@string/zero" />
+                    <Button
+                        android:id="@+id/goal_france"
+                        android:layout_width="@dimen/oval_button_size"
+                        android:layout_height="@dimen/oval_button_size"
+                       android:layout_marginLeft="@dimen/ten_dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignBaseline="@id/goal_portugal"
+                        android:background="@drawable/add_one_button"
+                        android:text="@string/plus"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="@dimen/sixteen_sp" />
 
                 </RelativeLayout>
 
@@ -105,13 +121,14 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/ten_dp"
-                    android:layout_weight="1"
                     android:drawableBottom="@drawable/flag_france"
-                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center"
                     android:text="@string/france_string"
                     android:textAllCaps="true"
                     android:textColor="@color/secondaryTextColor"
                     android:textStyle="bold" />
+
 
 
             </LinearLayout>
@@ -119,37 +136,25 @@
 
 <!--
 
+    <TextView
+                    android:id="@+id/faul_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/goal_france"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/twenty_dp"
+                    android:text="@string/fauls"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/sixteen_sp"
+                    android:textStyle="bold"
+                    />
 
 
 
 
-            <Button
-                android:id="@+id/goal_france"
-                android:layout_width="@dimen/oval_button_size"
-                android:layout_height="@dimen/oval_button_size"
-                android:layout_below="@id/score_text"
-                android:layout_alignParentRight="true"
-                android:layout_alignBaseline="@id/goal_portugal"
-                android:background="@drawable/add_one_button"
-                android:text="@string/plus"
-                android:textColor="@color/primaryTextColor"
-                android:textSize="@dimen/sixteen_sp"
-                android:layout_marginRight="@dimen/oval_button_margin"
-                android:layout_marginBottom="@dimen/twenty_dp"/>
 
 
-            <TextView
-                android:id="@+id/faul_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/goal_france"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="@dimen/twenty_dp"
-                android:text="@string/fauls"
-                android:textAllCaps="true"
-                android:textSize="@dimen/sixteen_sp"
-                android:textStyle="bold"
-                />
+
             <Button
                 android:id="@+id/faul_portugal"
                 android:layout_width="@dimen/oval_button_size"
