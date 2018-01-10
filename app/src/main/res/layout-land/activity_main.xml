@@ -52,7 +52,7 @@
                     android:textStyle="bold" />
                 <RelativeLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginRight="@dimen/ten_dp"
                     android:layout_marginLeft="@dimen/ten_dp">
 
@@ -61,11 +61,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
-                        android:layout_marginBottom="@dimen/twenty_dp"
                         android:text="@string/score_string"
                         android:textAllCaps="true"
                         android:textSize="@dimen/fourteen_sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:layout_marginBottom="@dimen/ten_dp"/>
 
                     <Button
                         android:id="@+id/goal_portugal"
@@ -75,12 +75,19 @@
                         android:background="@drawable/add_one_button"
                         android:text="@string/plus"
                         android:textColor="@color/primaryTextColor"
-                        android:textSize="@dimen/sixteen_sp" />
+                        android:textSize="@dimen/sixteen_sp"
 
+                        />
 
-
-
-
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/portugal_score"
+                        android:layout_toEndOf="@id/goal_portugal"
+                        android:layout_toRightOf="@id/goal_portugal"
+                        android:text="@string/zero"
+                        android:layout_alignBaseline="@id/goal_portugal"
+                        android:layout_marginLeft="@dimen/ten_dp"
 
                 </RelativeLayout>
 
@@ -103,16 +110,7 @@
 
 <!--
 
-          <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:id="@+id/portugal_score"
-              android:layout_toEndOf="@id/goal_portugal"
-              android:layout_toRightOf="@id/goal_portugal"
-              android:text="@string/zero"
-              android:layout_alignBaseline="@id/goal_portugal"
-              android:layout_marginLeft="@dimen/score_faults_margin"
-              android:textSize="@dimen/sixteen_sp"/>
+
 
 
 
