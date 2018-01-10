@@ -87,7 +87,16 @@
                         android:layout_toRightOf="@id/goal_portugal"
                         android:text="@string/zero"
                         android:layout_alignBaseline="@id/goal_portugal"
-                        android:layout_marginLeft="@dimen/ten_dp"
+                        android:layout_marginLeft="@dimen/ten_dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/portugal_score"
+                        android:layout_alignBaseline="@id/portugal_score"
+                        android:layout_marginLeft="@dimen/twenty_dp"
+                        android:textSize="@dimen/sixteen_sp"
+                        android:text="@string/zero"
+                        />
 
                 </RelativeLayout>
 
@@ -128,15 +137,7 @@
                 android:layout_marginRight="@dimen/oval_button_margin"
                 android:layout_marginBottom="@dimen/twenty_dp"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@id/goal_france"
-                android:layout_toLeftOf="@id/goal_france"
-                android:layout_marginRight="@dimen/score_faults_margin"
-                android:textSize="@dimen/sixteen_sp"
-                android:text="@string/zero"
-                />
+
             <TextView
                 android:id="@+id/faul_text"
                 android:layout_width="wrap_content"
