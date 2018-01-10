@@ -67,6 +67,17 @@
                         android:textSize="@dimen/fourteen_sp"
                         android:textStyle="bold" />
 
+                    <Button
+                        android:id="@+id/goal_portugal"
+                        android:layout_width="@dimen/oval_button_size"
+                        android:layout_height="@dimen/oval_button_size"
+                        android:layout_below="@id/score_text"
+                        android:background="@drawable/add_one_button"
+                        android:text="@string/plus"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="@dimen/sixteen_sp" />
+
+
 
 
 
@@ -91,16 +102,6 @@
 
 
 <!--
-            <Button
-                android:id="@+id/goal_portugal"
-                android:layout_width="@dimen/oval_button_size"
-                android:layout_height="@dimen/oval_button_size"
-                android:layout_below="@id/score_text"
-                android:layout_marginLeft="@dimen/oval_button_margin"
-                android:background="@drawable/add_one_button"
-                android:text="@string/plus"
-                android:textColor="@color/primaryTextColor"
-                android:textSize="@dimen/sixteen_sp" />
 
           <TextView
               android:layout_width="wrap_content"
