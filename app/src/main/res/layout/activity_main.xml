@@ -88,7 +88,8 @@
                 android:background="@drawable/add_one_button"
                 android:text="@string/plus"
                 android:textColor="@color/primaryTextColor"
-                android:textSize="@dimen/sixteen_sp" />
+                android:textSize="@dimen/sixteen_sp"
+                android:onClick="addGoalPortugal"/>
 
             <TextView
                 android:id="@+id/portugal_score"
