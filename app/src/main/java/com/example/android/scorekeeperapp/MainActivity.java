@@ -6,6 +6,11 @@ import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    static final String STATE_GOAL_PORTUGAL = "portugalGoal";
+    static final String STATE_GOAL_FRANCE = "franceGoal";
+
+    static final String STATE_FAUL_PORTUGAL = "portugalFaul";
+    static final String STATE_FOUL_FRANCE = "franceFoul";
 
     int portugalGoal = 0;
     int franceGoal = 0;
@@ -19,6 +24,33 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+    }
+    @Override
+    public void onSaveInstanceState (Bundle savedInstanceState){
+        savedInstanceState.putInt(STATE_GOAL_PORTUGAL, portugalGoal);
+        savedInstanceState.putInt(STATE_GOAL_FRANCE, franceGoal);
+
+        savedInstanceState.putInt(STATE_FAUL_PORTUGAL, portugalFaul);
+        savedInstanceState.putInt(STATE_FOUL_FRANCE, franceFoul);
+
+        super.onSaveInstanceState(savedInstanceState);
+    }
+
+    /**
+     * Maintaining score and fouls when screen changes oriantation
+     */
+    public void onRestoreInstanceState(Bundle savedInstanceState){
+        super.onRestoreInstanceState(savedInstanceState);
+
+        portugalGoal = savedInstanceState.getInt(STATE_GOAL_PORTUGAL);
+        franceGoal = savedInstanceState.getInt(STATE_GOAL_FRANCE);
+        portugalFaul = savedInstanceState.getInt(STATE_FAUL_PORTUGAL);
+        franceFoul = savedInstanceState.getInt(STATE_FOUL_FRANCE);
+
+        displayPortugalScore(portugalGoal);
+        displayFranceScore(franceGoal);
+        displayPortugalFaul(portugalFaul);
+        displayFranceFaul(franceFoul);
     }
 
     /**
