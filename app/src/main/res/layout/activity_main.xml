@@ -76,7 +76,7 @@
                 android:layout_marginBottom="@dimen/twenty_dp"
                 android:text="@string/score_string"
                 android:textAllCaps="true"
-                android:textSize="@dimen/sixteen_sp"
+                android:textSize="@dimen/fourteen_sp"
                 android:textStyle="bold" />
 
             <Button
@@ -135,7 +135,7 @@
                 android:layout_marginBottom="@dimen/twenty_dp"
                 android:text="@string/fauls"
                 android:textAllCaps="true"
-                android:textSize="@dimen/sixteen_sp"
+                android:textSize="@dimen/fourteen_sp"
                 android:textStyle="bold"
                 />
             <Button

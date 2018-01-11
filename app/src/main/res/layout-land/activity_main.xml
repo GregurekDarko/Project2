@@ -67,7 +67,8 @@
                         android:text="@string/score_string"
                         android:textAllCaps="true"
                         android:textSize="@dimen/fourteen_sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:layout_marginBottom="@dimen/ten_dp"/>
 
                     <Button
                         android:id="@+id/goal_portugal"
@@ -121,10 +122,10 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/goal_france"
                         android:layout_centerHorizontal="true"
-
+                        android:layout_marginBottom="@dimen/ten_dp"
                         android:text="@string/fauls"
                         android:textAllCaps="true"
-                        android:textSize="@dimen/sixteen_sp"
+                        android:textSize="@dimen/fourteen_sp"
                         android:textStyle="bold" />
 
                     <Button
