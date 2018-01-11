@@ -78,10 +78,10 @@
                         android:layout_below="@id/score_text"
                         android:layout_marginRight="@dimen/ten_dp"
                         android:background="@drawable/add_one_button"
+                        android:onClick="addGoalPortugal"
                         android:text="@string/plus"
                         android:textColor="@color/primaryTextColor"
                         android:textSize="@dimen/sixteen_sp"
-                        android:onClick="addGoalPortugal"
 
 
                         />
@@ -97,14 +97,14 @@
                         android:textSize="@dimen/sixteen_sp" />
 
                     <TextView
+                        android:id="@+id/france_score"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignBaseline="@id/portugal_score"
                         android:layout_marginLeft="@dimen/twenty_dp"
                         android:layout_toLeftOf="@id/goal_france"
                         android:text="@string/zero"
-                        android:textSize="@dimen/sixteen_sp"
-                        android:id="@+id/france_score"/>
+                        android:textSize="@dimen/sixteen_sp" />
 
                     <Button
                         android:id="@+id/goal_france"
@@ -114,10 +114,10 @@
                         android:layout_alignParentRight="true"
                         android:layout_marginLeft="@dimen/ten_dp"
                         android:background="@drawable/add_one_button"
+                        android:onClick="addGoalFrance"
                         android:text="@string/plus"
                         android:textColor="@color/primaryTextColor"
-                        android:textSize="@dimen/sixteen_sp"
-                        android:onClick="addGoalFrance"/>
+                        android:textSize="@dimen/sixteen_sp" />
 
                     <TextView
                         android:id="@+id/faul_text"
@@ -142,14 +142,14 @@
                         android:textSize="@dimen/sixteen_sp" />
 
                     <TextView
+                        android:id="@+id/num_of_fauls_pt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignBaseline="@id/faul_portugal"
                         android:layout_marginLeft="@dimen/ten_dp"
                         android:layout_toRightOf="@id/faul_portugal"
                         android:text="@string/zero"
-                        android:textSize="@dimen/sixteen_sp"
-                        android:id="@+id/num_of_fauls_pt"/>
+                        android:textSize="@dimen/sixteen_sp" />
 
                     <Button
                         android:id="@+id/faul_france"
@@ -160,19 +160,19 @@
                         android:layout_below="@id/faul_text"
                         android:layout_marginLeft="@dimen/ten_dp"
                         android:background="@drawable/add_one_button"
+                        android:onClick="addFranceFoul"
                         android:text="@string/plus"
                         android:textColor="@color/primaryTextColor"
-                        android:textSize="@dimen/sixteen_sp"
-                        android:onClick="addFranceFoul"/>
+                        android:textSize="@dimen/sixteen_sp" />
 
                     <TextView
+                        android:id="@id/num_of_fauls_fr"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignBaseline="@id/faul_france"
                         android:layout_toLeftOf="@id/faul_france"
                         android:text="@string/zero"
-                        android:textSize="@dimen/sixteen_sp"
-                        android:id="@id/num_of_fauls_fr"/>
+                        android:textSize="@dimen/sixteen_sp" />
 
                 </RelativeLayout>
 
@@ -200,9 +200,9 @@
                 android:layout_below="@id/teams"
                 android:layout_centerHorizontal="true"
                 android:background="@drawable/reset_button"
+                android:onClick="resetAll"
                 android:text="@string/Reset"
                 android:textColor="@color/primaryTextColor"
-
 
                 />
 

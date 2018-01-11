@@ -25,8 +25,9 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
     @Override
-    public void onSaveInstanceState (Bundle savedInstanceState){
+    public void onSaveInstanceState(Bundle savedInstanceState) {
         savedInstanceState.putInt(STATE_GOAL_PORTUGAL, portugalGoal);
         savedInstanceState.putInt(STATE_GOAL_FRANCE, franceGoal);
 
@@ -39,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Maintaining score and fouls when screen changes oriantation
      */
-    public void onRestoreInstanceState(Bundle savedInstanceState){
+    public void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
 
         portugalGoal = savedInstanceState.getInt(STATE_GOAL_PORTUGAL);
@@ -126,6 +127,21 @@ public class MainActivity extends AppCompatActivity {
     public void displayFranceFaul(int faul) {
         TextView scoreView = (TextView) findViewById(R.id.num_of_fauls_fr);
         scoreView.setText(String.valueOf(faul));
+    }
+
+    /**
+     * Reseting all
+     */
+
+    public void resetAll(View v) {
+        portugalGoal = 0;
+        displayPortugalScore(portugalGoal);
+        franceGoal = 0;
+        displayFranceScore(franceGoal);
+        portugalFaul = 0;
+        displayPortugalFaul(portugalFaul);
+        franceFoul = 0;
+        displayFranceFaul(franceFoul);
     }
 
 }
