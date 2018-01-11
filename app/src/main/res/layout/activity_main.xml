@@ -90,42 +90,41 @@
                 android:textColor="@color/primaryTextColor"
                 android:textSize="@dimen/sixteen_sp" />
 
-          <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:id="@+id/portugal_score"
-              android:layout_toEndOf="@id/goal_portugal"
-              android:layout_toRightOf="@id/goal_portugal"
-              android:text="@string/zero"
-              android:layout_alignBaseline="@id/goal_portugal"
-              android:layout_marginLeft="@dimen/score_faults_margin"
-              android:textSize="@dimen/sixteen_sp"/>
-
+            <TextView
+                android:id="@+id/portugal_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/goal_portugal"
+                android:layout_marginLeft="@dimen/score_faults_margin"
+                android:layout_toEndOf="@id/goal_portugal"
+                android:layout_toRightOf="@id/goal_portugal"
+                android:text="@string/zero"
+                android:textSize="@dimen/sixteen_sp" />
 
 
             <Button
                 android:id="@+id/goal_france"
                 android:layout_width="@dimen/oval_button_size"
                 android:layout_height="@dimen/oval_button_size"
-                android:layout_below="@id/score_text"
-                android:layout_alignParentRight="true"
                 android:layout_alignBaseline="@id/goal_portugal"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/score_text"
+                android:layout_marginBottom="@dimen/twenty_dp"
+                android:layout_marginRight="@dimen/oval_button_margin"
                 android:background="@drawable/add_one_button"
                 android:text="@string/plus"
                 android:textColor="@color/primaryTextColor"
-                android:textSize="@dimen/sixteen_sp"
-                android:layout_marginRight="@dimen/oval_button_margin"
-                android:layout_marginBottom="@dimen/twenty_dp"/>
+                android:textSize="@dimen/sixteen_sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignBaseline="@id/goal_france"
-                android:layout_toLeftOf="@id/goal_france"
                 android:layout_marginRight="@dimen/score_faults_margin"
-                android:textSize="@dimen/sixteen_sp"
+                android:layout_toLeftOf="@id/goal_france"
                 android:text="@string/zero"
-                />
+                android:textSize="@dimen/sixteen_sp" />
+
             <TextView
                 android:id="@+id/faul_text"
                 android:layout_width="wrap_content"
@@ -136,8 +135,8 @@
                 android:text="@string/fauls"
                 android:textAllCaps="true"
                 android:textSize="@dimen/fourteen_sp"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
+
             <Button
                 android:id="@+id/faul_portugal"
                 android:layout_width="@dimen/oval_button_size"
@@ -148,54 +147,55 @@
                 android:text="@string/plus"
                 android:textColor="@color/primaryTextColor"
                 android:textSize="@dimen/sixteen_sp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignBaseline="@id/faul_portugal"
-                android:layout_toRightOf="@id/faul_portugal"
                 android:layout_marginLeft="@dimen/score_faults_margin"
-                android:textSize="@dimen/sixteen_sp"
+                android:layout_toRightOf="@id/faul_portugal"
                 android:text="@string/zero"
-                />
+                android:textSize="@dimen/sixteen_sp" />
+
             <Button
                 android:id="@+id/faul_france"
                 android:layout_width="@dimen/oval_button_size"
                 android:layout_height="@dimen/oval_button_size"
-                android:layout_below="@id/faul_text"
-                android:layout_alignParentRight="true"
                 android:layout_alignBaseline="@id/faul_portugal"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/faul_text"
+                android:layout_marginBottom="@dimen/twenty_dp"
+                android:layout_marginRight="@dimen/oval_button_margin"
                 android:background="@drawable/add_one_button"
                 android:text="@string/plus"
                 android:textColor="@color/primaryTextColor"
-                android:textSize="@dimen/sixteen_sp"
-                android:layout_marginRight="@dimen/oval_button_margin"
-                android:layout_marginBottom="@dimen/twenty_dp"/>
+                android:textSize="@dimen/sixteen_sp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignBaseline="@id/faul_france"
-                android:layout_toLeftOf="@id/faul_france"
                 android:layout_marginRight="@dimen/score_faults_margin"
-                android:textSize="@dimen/sixteen_sp"
+                android:layout_toLeftOf="@id/faul_france"
                 android:text="@string/zero"
-                />
+                android:textSize="@dimen/sixteen_sp" />
 
             <View
+                android:id="@+id/border_bottom"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/two_dp"
                 android:layout_below="@id/faul_france"
-                android:background="@color/border_colors"
                 android:layout_marginBottom="@dimen/twenty_dp"
-                android:id="@+id/border_bottom"
-                />
+                android:background="@color/border_colors" />
+
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
                 android:layout_below="@id/border_bottom"
-                android:text="@string/Reset"
+                android:layout_centerHorizontal="true"
                 android:background="@drawable/reset_button"
+                android:text="@string/Reset"
                 android:textColor="@color/primaryTextColor"
 
                 />
@@ -211,12 +211,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:text="NOTE: This game took place in 2016, Portugal won by 1 : 0, I made this App just for my educational purposes in Android development. Thank you."
         android:layout_margin="5dp"
         android:background="@drawable/note_background"
-        android:textColor="@color/primaryTextColor"
-        />
-
+        android:text="NOTE: This game took place in 2016, Portugal won by 1 : 0, I made this App just for my educational purposes in Android development. Thank you."
+        android:textColor="@color/primaryTextColor" />
 
 
 </RelativeLayout>
