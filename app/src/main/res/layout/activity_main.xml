@@ -115,7 +115,8 @@
                 android:background="@drawable/add_one_button"
                 android:text="@string/plus"
                 android:textColor="@color/primaryTextColor"
-                android:textSize="@dimen/sixteen_sp" />
+                android:textSize="@dimen/sixteen_sp"
+                android:onClick="addGoalFrance"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -124,7 +125,8 @@
                 android:layout_marginRight="@dimen/score_faults_margin"
                 android:layout_toLeftOf="@id/goal_france"
                 android:text="@string/zero"
-                android:textSize="@dimen/sixteen_sp" />
+                android:textSize="@dimen/sixteen_sp"
+                android:id="@+id/france_score"/>
 
             <TextView
                 android:id="@+id/faul_text"

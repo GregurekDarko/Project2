@@ -8,18 +8,36 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     int portugalGoal = 0;
+    int franceGoal = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
     }
+    /**
+     * Add one Goal for Portugal.
+     */
+
+
    public void addGoalPortugal (View V){
         portugalGoal = portugalGoal +1;
         displayPortugalScore(portugalGoal);
 
 
    }
+
+    /**
+     * Add one Goal for France.
+     */
+    public void addGoalFrance (View V){
+        franceGoal = franceGoal +1;
+        displayFranceScore(franceGoal);
+
+
+    }
 
 
 
@@ -33,4 +51,15 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = (TextView) findViewById(R.id.portugal_score);
         scoreView.setText(String.valueOf(score));
     }
+    /**
+     * Display score for France.
+     */
+    public void displayFranceScore(int score) {
+        TextView scoreView = (TextView) findViewById(R.id.france_score);
+        scoreView.setText(String.valueOf(score));
+    }
+
+
+
+
 }
