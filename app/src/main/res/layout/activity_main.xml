@@ -135,7 +135,7 @@
                 android:layout_below="@id/goal_france"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="@dimen/twenty_dp"
-                android:text="@string/fauls"
+                android:text="@string/fouls"
                 android:textAllCaps="true"
                 android:textSize="@dimen/fourteen_sp"
                 android:textStyle="bold" />
@@ -149,7 +149,8 @@
                 android:background="@drawable/add_one_button"
                 android:text="@string/plus"
                 android:textColor="@color/primaryTextColor"
-                android:textSize="@dimen/sixteen_sp" />
+                android:textSize="@dimen/sixteen_sp"
+                android:onClick="addFaulPortugal"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -158,7 +159,8 @@
                 android:layout_marginLeft="@dimen/score_faults_margin"
                 android:layout_toRightOf="@id/faul_portugal"
                 android:text="@string/zero"
-                android:textSize="@dimen/sixteen_sp" />
+                android:textSize="@dimen/sixteen_sp"
+                android:id="@+id/num_of_fauls_pt"/>
 
             <Button
                 android:id="@+id/faul_france"
@@ -181,7 +183,8 @@
                 android:layout_marginRight="@dimen/score_faults_margin"
                 android:layout_toLeftOf="@id/faul_france"
                 android:text="@string/zero"
-                android:textSize="@dimen/sixteen_sp" />
+                android:textSize="@dimen/sixteen_sp"
+                android:id="@+id/num_of_fauls_fr"/>
 
             <View
                 android:id="@+id/border_bottom"

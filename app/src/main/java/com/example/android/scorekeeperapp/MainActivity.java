@@ -10,6 +10,8 @@ public class MainActivity extends AppCompatActivity {
     int portugalGoal = 0;
     int franceGoal = 0;
 
+    int portugalFaul = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +41,12 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void addFaulPortugal (View V){
+        portugalFaul = portugalFaul +1;
+        displayPortugalFaul(portugalFaul);
 
+
+    }
 
 
 
@@ -58,7 +65,13 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = (TextView) findViewById(R.id.france_score);
         scoreView.setText(String.valueOf(score));
     }
-
+    /**
+     * Display faul for Portugal.
+     */
+    public void displayPortugalFaul(int faul) {
+        TextView scoreView = (TextView) findViewById(R.id.num_of_fauls_pt);
+        scoreView.setText(String.valueOf(faul));
+    }
 
 
 
