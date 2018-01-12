@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
         scoreViewPortugal = (TextView) findViewById(R.id.portugal_score);
         scoreViewFrance = (TextView) findViewById(R.id.france_score);
 
-        foulViewPortugal = (TextView) findViewById(R.id.faul_portugal);
-        foulViewFrance = (TextView) findViewById(R.id.faul_france);
+        foulViewPortugal = (TextView) findViewById(R.id.num_of_fauls_pt);
+        foulViewFrance = (TextView) findViewById(R.id.num_of_fauls_fr);
     }
 
     @Override
