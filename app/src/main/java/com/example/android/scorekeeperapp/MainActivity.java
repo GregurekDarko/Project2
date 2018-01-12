@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     int portugalFaul = 0;
     int franceFoul = 0;
 
+
     TextView scoreViewPortugal;
     TextView scoreViewFrance;
 
@@ -110,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
      * Display score for Portugal.
      */
     public void displayPortugalScore(int score) {
-        TextView scoreViewPortugal = (TextView) findViewById(R.id.portugal_score);
+
         scoreViewPortugal.setText(String.valueOf(score));
     }
 
@@ -118,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
      * Display score for France.
      */
     public void displayFranceScore(int score) {
-        TextView scoreViewFrance = (TextView) findViewById(R.id.france_score);
+
         scoreViewFrance.setText(String.valueOf(score));
     }
 
@@ -126,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
      * Display fouls for Portugal.
      */
     public void displayPortugalFaul(int faul) {
-        TextView foulViewPortugal = (TextView) findViewById(R.id.num_of_fauls_pt);
+
         foulViewPortugal.setText(String.valueOf(faul));
     }
 
@@ -134,7 +135,7 @@ public class MainActivity extends AppCompatActivity {
      * Display fouls for France.
      */
     public void displayFranceFaul(int faul) {
-        TextView foulViewFrance = (TextView) findViewById(R.id.num_of_fauls_fr);
+
         foulViewFrance.setText(String.valueOf(faul));
     }
 
