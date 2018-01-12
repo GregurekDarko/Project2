@@ -139,7 +139,8 @@
                         android:background="@drawable/add_one_button"
                         android:text="@string/plus"
                         android:textColor="@color/primaryTextColor"
-                        android:textSize="@dimen/sixteen_sp" />
+                        android:textSize="@dimen/sixteen_sp"
+                        android:onClick="addFranceFoul"/>
 
                     <TextView
                         android:id="@+id/num_of_fauls_pt"
