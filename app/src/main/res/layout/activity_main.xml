@@ -99,7 +99,7 @@
                 android:layout_marginLeft="@dimen/score_faults_margin"
                 android:layout_toEndOf="@id/goal_portugal"
                 android:layout_toRightOf="@id/goal_portugal"
-                android:text="@string/zero"
+                android:text="0"
                 android:textSize="@dimen/sixteen_sp" />
 
 

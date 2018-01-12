@@ -18,12 +18,21 @@ public class MainActivity extends AppCompatActivity {
     int portugalFaul = 0;
     int franceFoul = 0;
 
+    TextView scoreViewPortugal;
+    TextView scoreViewFrance;
+
+    TextView foulViewPortugal;
+    TextView foulViewFrance;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        scoreViewPortugal = (TextView) findViewById(R.id.portugal_score);
+        scoreViewFrance = (TextView) findViewById(R.id.france_score);
 
-
+        foulViewPortugal = (TextView) findViewById(R.id.faul_portugal);
+        foulViewFrance = (TextView) findViewById(R.id.faul_france);
     }
 
     @Override
@@ -101,32 +110,32 @@ public class MainActivity extends AppCompatActivity {
      * Display score for Portugal.
      */
     public void displayPortugalScore(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.portugal_score);
-        scoreView.setText(String.valueOf(score));
+        TextView scoreViewPortugal = (TextView) findViewById(R.id.portugal_score);
+        scoreViewPortugal.setText(String.valueOf(score));
     }
 
     /**
      * Display score for France.
      */
     public void displayFranceScore(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.france_score);
-        scoreView.setText(String.valueOf(score));
+        TextView scoreViewFrance = (TextView) findViewById(R.id.france_score);
+        scoreViewFrance.setText(String.valueOf(score));
     }
 
     /**
      * Display fouls for Portugal.
      */
     public void displayPortugalFaul(int faul) {
-        TextView scoreView = (TextView) findViewById(R.id.num_of_fauls_pt);
-        scoreView.setText(String.valueOf(faul));
+        TextView foulViewPortugal = (TextView) findViewById(R.id.num_of_fauls_pt);
+        foulViewPortugal.setText(String.valueOf(faul));
     }
 
     /**
      * Display fouls for France.
      */
     public void displayFranceFaul(int faul) {
-        TextView scoreView = (TextView) findViewById(R.id.num_of_fauls_fr);
-        scoreView.setText(String.valueOf(faul));
+        TextView foulViewFrance = (TextView) findViewById(R.id.num_of_fauls_fr);
+        foulViewFrance.setText(String.valueOf(faul));
     }
 
     /**
